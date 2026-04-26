@@ -41,16 +41,6 @@ This project implements an pick-and-place task where a Sawyer robot:
 2. Click **Play** (▶) to start simulation
 3. Robot executes pick-and-place sequence automatically
 
-
-## Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| Scene doesn't load | Verify CoppeliaSim version ≥ 4.5; reinstall if needed |
-| Robot doesn't move | Check script isn't in disabled state; reload with Ctrl+Shift+C |
-| Objects fall during grip | Increase gripper force in script parameters |
-| Video not recording | Enable headless mode or use system screen recorder |
-
 ## References
 
 - [CoppeliaSim Documentation](https://www.coppeliarobotics.com/helpFiles/)
