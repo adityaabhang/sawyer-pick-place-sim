@@ -1,1 +1,58 @@
-# sawyer-pick-place-sim
+# Sawyer Pick-and-Place Simulator
+
+A CoppeliaSim-based robotic pick-and-place simulation using a Sawyer robot to pick and place cuboid objects by color.
+
+## Overview
+
+This project implements an pick-and-place task where a Sawyer robot:
+- Known cordinates 6 cuboid objects (2 blue, 2 green, 2 red)
+- Picks each object from the workspace platform
+- Places objects into color-matched bins 
+- Uses inverse kinematics for motion planning
+
+## Project Structure
+
+```
+├── README.md
+├── sawyer-pick-place-sim.ttt          # CoppeliaSim scene file
+├── sawyer_pick_place_script.lua      # Sawyer control script
+└── video/
+    └── pick_and_place_demo.mp4       # Simulation execution video
+```
+
+## Requirements
+
+### Software
+- **CoppeliaSim** (v4.10) 
+
+## Quick Setup
+
+### 1. Load the Scene
+1. Open CoppeliaSim
+2. File → Open → `sawyer-pick-place-sim.ttt`
+3. Scene loads with:
+   - Sawyer 7-DOF robotic arm
+   - 6 cuboid objects (2 each: blue, green, red)
+   - 3 colored bins for sorting
+   - Workspace platform
+
+### 2. Run the Simulation
+1. Locate the script associated with the Sawyer robot in the Scene tree (left panel)
+2. Click **Play** (▶) to start simulation
+3. Robot executes pick-and-place sequence automatically
+
+
+## Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Scene doesn't load | Verify CoppeliaSim version ≥ 4.5; reinstall if needed |
+| Robot doesn't move | Check script isn't in disabled state; reload with Ctrl+Shift+C |
+| Objects fall during grip | Increase gripper force in script parameters |
+| Video not recording | Enable headless mode or use system screen recorder |
+
+## References
+
+- [CoppeliaSim Documentation](https://www.coppeliarobotics.com/helpFiles/)
+- [Sawyer Robot Specifications](https://en.wikipedia.org/wiki/Sawyer_(robot))
+
