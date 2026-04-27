@@ -10,14 +10,18 @@ This project implements an pick-and-place task where a Sawyer robot:
 - Places objects into color-matched bins 
 - Uses inverse kinematics for motion planning
 
+## Demo
+
+<video width="100%" controls>
+  <source src="sawyer-pick-place-sim.mp4" type="video/mp4">
+</video>
+
 ## Project Structure
 
 ```
 ├── README.md
 ├── sawyer-pick-place-sim.ttt          # CoppeliaSim scene file
-├── sawyer_pick_place_script.lua      # Sawyer control script
-└── video/
-    └── pick_and_place_demo.mp4       # Simulation execution video
+└── sawyer-pick-place-sim.mp4          # Simulation execution video
 ```
 
 ## Requirements
